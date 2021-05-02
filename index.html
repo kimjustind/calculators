@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <!-- Decided to play with a lot of Bootstrap for this assignment -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/general.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="js/darkmode.js"></script> 
+
+    <style>
+        .col { margin: 16px; }
+        .btn {
+            height: 100%;
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            background: rgba(76, 175, 80, 0.3);
+            padding: 80px;
+        }
+        .btn:hover { background: rgba(76, 175, 80, 0.5); }
+        col h1, col h2, col h3 { margin: 0; }
+        h2 {
+            color: darkgreen;
+            padding: 10px;
+            font-size: 1em;
+        }
+        .emoji {
+            text-decoration: none;
+            font-size: 5em;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Start of the main navigation bar (Worked really hard on this one) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarNav" aria-controls="navBarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navBarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Afford.html">House Payments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="CompoundInterest.html">Compound Interest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Payment.html">Loan Payment</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex">
+                <button id="darkButton" onclick="darkMode()">Dark 🌙</button>
+            </div>
+        </div>
+    </nav>
+    <!-- End of the main navigation bar -->
+
+    <!-- Start of the header -->
+    <header class="container">
+        <div class="jumbotron">
+            <h1 class="display-2">Financial Calculators</h1>
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Assignment4</a></li>
+                    <li class="breadcrumb-item"><a href="#">justinkim</a></li>
+                    <li class="breadcrumb-item active">index.html</li>
+                </ol>
+            </nav>
+            <hr />
+        </div>
+    </header>
+    <!-- End of the header -->
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col">
+                <a class="btn" href="Afford.html" role="button">
+                    <span class="emoji">🏠</span>
+                    <h1>House Payments</h1>
+                    <h2>( Afford.html )</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a class="btn" href="CompoundInterest.html" role="button">
+                    <span class="emoji">💵</span>
+                    <h1>Compound Interest</h1>
+                    <h2>( CompoundInterest.html )</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a class="btn" href="Payment.html" role="button">
+                    <span class="emoji">💰</span>
+                    <h1>Loan Payment</h1>
+                    <h2>( Payment.html )</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Almost forgot about the footer -->
+    <footer>
+        <img src="images/pien.png" alt="ghost">
+        <div id="footline">
+            Justin Kim &copy;
+        </div>
+    </footer>
+
+</body>
+</html>

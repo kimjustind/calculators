@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(238, 238, 238);
+}
+.dark {
+    background-color: rgb(28, 27, 29);
+    color: lightgray;
+}
+.dark h1 {
+    color: white;
+}
+.dark h2 {
+    color: lightgreen;
+}
+
+.jumbotron {
+    padding: 100px 0 50px 0;
+}
+
+.thebox {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 50px 60px 60px 60px;
+}
+.bluebox {
+    border: 1px rgb(155, 155, 199) solid;
+    background: rgba(76, 94, 175, 0.3);
+}
+.yellowbox {
+    border: 1px rgb(199, 192, 155) solid;
+    background: rgba(175, 168, 76, 0.3);
+}
+.purplebox {
+    border: 1px rgb(199, 155, 199) solid;
+    background: rgba(175, 76, 170, 0.3);
+}
+
+footer {
+    height: 50px;
+    margin-left: 50px;
+}
+footer img {
+    height: 50px;
+}
+#footline {
+    margin-left: 8px;
+    border-left: 6px solid #2B5599;
+    padding: 12px;
+    display: inline;
+    line-height: 1in;
+}
