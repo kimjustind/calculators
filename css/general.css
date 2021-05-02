@@ -12,6 +12,20 @@ body {
     color: lightgreen;
 }
 
+#darkButton {
+    background: none;
+    border: none;
+}
+
+#darkButton img {
+    filter: invert(100%);
+}
+
+#darkButton img:hover {
+    filter: invert(80%);
+    transition: filter 0.5s;
+}
+
 .jumbotron {
     padding: 100px 0 50px 0;
 }
